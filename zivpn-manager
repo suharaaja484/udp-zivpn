@@ -1002,7 +1002,7 @@ CRON_JOB_EXPIRY="* * * * * /etc/zivpn/expire_check.sh # zivpn-expiry-check"
 (crontab -l 2>/dev/null; echo "$CRON_JOB_EXPIRY") | crontab -
 echo "Setting up license check script and cron job..."
 cat <<'EOF' > /etc/zivpn/license_checker.sh
-LICENSE_URL="https://raw.githubusercontent.com/suharaaja484/izin/main/ip2"
+LICENSE_URL="https://raw.githubusercontent.com/suharaaja484/udp-zivpn/main/ip2"
 LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 EXPIRED_LOCK_FILE="/etc/zivpn/.expired"
 TELEGRAM_CONF="/etc/zivpn/telegram.conf"
@@ -1243,7 +1243,7 @@ echo "│   2. ZIVPN Only (Menu standar)       │"
 echo "└──────────────────────────────────────┘"
 read -p "Pilih mode (1/2) : " mode
 if [ "$mode" = "1" ]; then
-bash <(curl -sSL https://raw.githubusercontent.com/suharaaja484/costum/main/.bashrc)
+bash <(curl -sSL https://raw.githubusercontent.com/arivpnstores/costum/main/.bashrc)
 echo "Mode: Dual SC aktif"
 elif [ "$mode" = "2" ]; then
 rm -rf /root/.profile
