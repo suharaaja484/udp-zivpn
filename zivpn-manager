@@ -637,7 +637,7 @@ fi
 _save_total_users
 total_users=$(cat /etc/zivpn/total_users.txt)
 apikey=$(cat /etc/zivpn/api_auth.key)
-VERSI_URL="https://raw.githubusercontent.com/suharaaja484/udp-zivpn/main/versi.txt"
+VERSI_URL="https://raw.githubusercontent.com/arivpnstores/udp-zivpn/main/versi.txt"
 versisc=$(curl -fsSL "$VERSI_URL" 2>/dev/null | tr -d ' 
 ')
 if [ -z "$versisc" ]; then
